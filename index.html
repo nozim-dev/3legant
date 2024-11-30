@@ -4,11 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>3legant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./dist/style.css" />
   </head>
   <body>
     <!-- Container -->
-    <div class="w-full max-w-[1440px] mx-[auto] border-2 border-[red]">
+    <div class="w-full max-w-[1440px] mx-[auto]">
       <!-- Notification Bar -->
       <div class="w-full bg-color-green flex justify-end">
         <!-- Inside of Notification Bar -->
@@ -279,21 +285,1559 @@
         </div>
       </div>
 
-      <div>
-        <div>
-          <h1>More than just a game. It’s a lifestyle.</h1>
-          <p>
-            Whether you’re just starting out, have played your whole life or
-            you're a Tour pro, your swing is like a fingerprint.
-          </p>
-          <button>Shopping Now</button>
-        </div>
-        <div>
-          <img src="./image/heroSection.png" alt="" />
+      <!-- Hero Section -->
+      <div
+        class="w-full bg-[#121212] flex items-center justify-center max-lg-1120:px-[32px] max-lg-1120:py-[32px] max-md-712:!pt-0"
+      >
+        <!-- Inside of Hero Section -->
+        <div
+          class="w-full max-w-[1120px] mx-auto flex items-center justify-between gap-[12px] max-md-712:flex-col-reverse"
+        >
+          <!-- Title of Hero Section -->
+          <div class="w-full max-w-[497px] max-md-712:text-center">
+            <h1
+              class="text-[72px] font-Poppins font-medium leading-[80px] tracking-[-2px] text-[transparent] bg-[linear-gradient(to_top,rgba(255,255,255,0)_0%,rgba(255,255,255,1)_14%,rgba(255,255,255,1)_74%,rgba(255,255,255,0)_96%)] bg-no-repeat bg-clip-text max-md-992:text-[52px] max-md-992:leading-[60px] max-sm-381:!text-[40px] max-sm-381:!leading-[44px] max-sm-381:!tracking-[-0.4px]"
+            >
+              More than <br class="max-sm-381:hidden" />
+              just a game. <br class="max-sm-381:hidden" />
+              It’s a lifestyle.
+            </h1>
+            <p
+              class="max-w-[424px] mt-[8px] text-[20px] font-Inter leading-[32px] text-color-white-80 font-normal max-md-992:text-[16px] max-md-992:leading-[26px] max-md-712:mx-auto max-sm-381:!mt-[16px]"
+            >
+              Whether you’re just starting out, have played your whole life or
+              you're a Tour pro, your swing is like a fingerprint.
+            </p>
+            <button
+              class="mt-[28px] w-full max-w-[234px] rounded-[8px] bg-color-green py-[12px] block text-[18px] leading-[32px] tracking-[-0.4px] font-medium font-Inter border-[2px] border-color-green hover:bg-[transparent] transition hover:text-[#fff] max-md-800:max-w-[180px] max-md-800:py-[8px] max-md-800:text-[16px] max-md-712:mx-auto max-sm-381:!mt-[16px]"
+            >
+              Shopping Now
+            </button>
+          </div>
+          <!-- Image of Hero Section -->
+          <div class="w-full max-w-[650px] max-md-712:max-w-[400px]">
+            <img
+              class="w-full h-full object-cover"
+              src="./image/heroSection.png"
+              alt=""
+            />
+          </div>
         </div>
       </div>
+
+      <!-- Fetured Section -->
+      <div class="w-full mt-[48px]">
+        <!-- Fetured header -->
+        <div
+          class="w-full max-w-[1120px] mx-auto flex justify-between items-center gap-[12px] max-lg-1120:px-[32px]"
+        >
+          <h1
+            class="text-[40px] leading-[44px] tracking-[-0.4px] font-Poppins text-[#000] font-medium max-sm-430:text-[32px]"
+          >
+            Featured
+          </h1>
+          <div
+            class="w-full max-w-[72px] flex justify-between items-center gap-[12px]"
+          >
+            <div
+              class="w-[16px] h-[16px] bg-color-black-80 rounded-full outline outline-color-black-80 outline-offset-[4px]"
+            ></div>
+            <div class="w-[16px] h-[16px] bg-[#6C7275] rounded-full"></div>
+            <div class="w-[16px] h-[16px] bg-[#6C7275] rounded-full"></div>
+          </div>
+        </div>
+        <!-- Cards box -->
+        <div
+          class="w-full max-w-[1120px] mx-auto flex gap-[24px] mt-[48px] overflow-x-auto scrollbar-custom pb-[40px] max-lg-1120:px-[32px]"
+        >
+          <!-- card Items -->
+          <div
+            class="w-full max-w-[262px] min-w-[262px] flex flex-col gap-[12px] group transition"
+          >
+            <!-- card item top box -->
+            <div class="w-full h-[349px] relative overflow-hidden">
+              <!-- card item tag -->
+              <span
+                class="absolute top-[16px] left-[16px] bg-[#fff] rounded-[4px] flex justify-center items-center w-full max-w-[63px] py-[4px] font-Inter text-[16px] leading-[16px] font-bold"
+              >
+                HOT
+              </span>
+              <!-- cart item image box -->
+              <img
+                class="w-full h-full object-cover"
+                src="./image/cart1.png"
+                alt=""
+              />
+              <!-- cart item button -->
+              <div
+                class="absolute top-[120%] left-[50%] translate-x-[-50%] bg-color-black-80 w-full max-w-[230px] py-[9px] rounded-[8px] font-Inter text-[16px] leading-[28px] font-medium tracking-[-0.4px] text-color-white-80 text-center shadow-ButtonShadow transition-all group-hover:top-[83%] cursor-pointer border-color-black-80 border-[2px] hover:bg-[#fff] hover:text-color-black-80"
+              >
+                Add to cart
+              </div>
+            </div>
+            <!-- card item title box -->
+            <div class="w-full">
+              <div
+                class="w-full max-w-[88px] flex justify-start items-center gap-[2px]"
+              >
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.53834 1.10997C6.70914 0.699319 7.29086 0.699318 7.46166 1.10996L8.99874 4.80556C9.07075 4.97868 9.23355 5.09696 9.42045 5.11194L13.4102 5.4318C13.8535 5.46734 14.0332 6.02059 13.6955 6.30993L10.6557 8.91378C10.5133 9.03576 10.4512 9.22715 10.4947 9.40952L11.4234 13.3028C11.5265 13.7354 11.0559 14.0773 10.6764 13.8455L7.26063 11.7592C7.10062 11.6615 6.89938 11.6615 6.73937 11.7592L3.32363 13.8455C2.94408 14.0773 2.47345 13.7354 2.57665 13.3028L3.50534 9.40952C3.54884 9.22715 3.48665 9.03576 3.34426 8.91378L0.304527 6.30993C-0.0332418 6.02059 0.14652 5.46734 0.589847 5.4318L4.57955 5.11194C4.76645 5.09696 4.92925 4.97868 5.00126 4.80556L6.53834 1.10997Z"
+                    fill="#343839"
+                  />
+                </svg>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.53834 1.10997C6.70914 0.699319 7.29086 0.699318 7.46166 1.10996L8.99874 4.80556C9.07075 4.97868 9.23355 5.09696 9.42045 5.11194L13.4102 5.4318C13.8535 5.46734 14.0332 6.02059 13.6955 6.30993L10.6557 8.91378C10.5133 9.03576 10.4512 9.22715 10.4947 9.40952L11.4234 13.3028C11.5265 13.7354 11.0559 14.0773 10.6764 13.8455L7.26063 11.7592C7.10062 11.6615 6.89938 11.6615 6.73937 11.7592L3.32363 13.8455C2.94408 14.0773 2.47345 13.7354 2.57665 13.3028L3.50534 9.40952C3.54884 9.22715 3.48665 9.03576 3.34426 8.91378L0.304527 6.30993C-0.0332418 6.02059 0.14652 5.46734 0.589847 5.4318L4.57955 5.11194C4.76645 5.09696 4.92925 4.97868 5.00126 4.80556L6.53834 1.10997Z"
+                    fill="#343839"
+                  />
+                </svg>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.53834 1.10997C6.70914 0.699319 7.29086 0.699318 7.46166 1.10996L8.99874 4.80556C9.07075 4.97868 9.23355 5.09696 9.42045 5.11194L13.4102 5.4318C13.8535 5.46734 14.0332 6.02059 13.6955 6.30993L10.6557 8.91378C10.5133 9.03576 10.4512 9.22715 10.4947 9.40952L11.4234 13.3028C11.5265 13.7354 11.0559 14.0773 10.6764 13.8455L7.26063 11.7592C7.10062 11.6615 6.89938 11.6615 6.73937 11.7592L3.32363 13.8455C2.94408 14.0773 2.47345 13.7354 2.57665 13.3028L3.50534 9.40952C3.54884 9.22715 3.48665 9.03576 3.34426 8.91378L0.304527 6.30993C-0.0332418 6.02059 0.14652 5.46734 0.589847 5.4318L4.57955 5.11194C4.76645 5.09696 4.92925 4.97868 5.00126 4.80556L6.53834 1.10997Z"
+                    fill="#343839"
+                  />
+                </svg>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.53834 1.10997C6.70914 0.699319 7.29086 0.699318 7.46166 1.10996L8.99874 4.80556C9.07075 4.97868 9.23355 5.09696 9.42045 5.11194L13.4102 5.4318C13.8535 5.46734 14.0332 6.02059 13.6955 6.30993L10.6557 8.91378C10.5133 9.03576 10.4512 9.22715 10.4947 9.40952L11.4234 13.3028C11.5265 13.7354 11.0559 14.0773 10.6764 13.8455L7.26063 11.7592C7.10062 11.6615 6.89938 11.6615 6.73937 11.7592L3.32363 13.8455C2.94408 14.0773 2.47345 13.7354 2.57665 13.3028L3.50534 9.40952C3.54884 9.22715 3.48665 9.03576 3.34426 8.91378L0.304527 6.30993C-0.0332418 6.02059 0.14652 5.46734 0.589847 5.4318L4.57955 5.11194C4.76645 5.09696 4.92925 4.97868 5.00126 4.80556L6.53834 1.10997Z"
+                    fill="#343839"
+                  />
+                </svg>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.53834 1.10997C6.70914 0.699319 7.29086 0.699318 7.46166 1.10996L8.99874 4.80556C9.07075 4.97868 9.23355 5.09696 9.42045 5.11194L13.4102 5.4318C13.8535 5.46734 14.0332 6.02059 13.6955 6.30993L10.6557 8.91378C10.5133 9.03576 10.4512 9.22715 10.4947 9.40952L11.4234 13.3028C11.5265 13.7354 11.0559 14.0773 10.6764 13.8455L7.26063 11.7592C7.10062 11.6615 6.89938 11.6615 6.73937 11.7592L3.32363 13.8455C2.94408 14.0773 2.47345 13.7354 2.57665 13.3028L3.50534 9.40952C3.54884 9.22715 3.48665 9.03576 3.34426 8.91378L0.304527 6.30993C-0.0332418 6.02059 0.14652 5.46734 0.589847 5.4318L4.57955 5.11194C4.76645 5.09696 4.92925 4.97868 5.00126 4.80556L6.53834 1.10997Z"
+                    fill="#343839"
+                  />
+                </svg>
+              </div>
+              <h2
+                class="font-Inter text-[16px] leading-[26px] text-color-black-80 mt-[4px] font-semibold"
+              >
+                Shark - Men's cabretta white golf glove
+              </h2>
+              <p
+                class="mt-[4px] font-Inter font-semibold text-[14px] leading-[22px] text-[#121212] flex gap-[12px]"
+              >
+                $19.00
+              </p>
+            </div>
+          </div>
+          <!-- card Items -->
+          <div
+            class="w-full max-w-[262px] min-w-[262px] flex flex-col gap-[12px] group transition"
+          >
+            <!-- card item top box -->
+            <div class="w-full h-[349px] relative overflow-hidden">
+              <!-- card item tag -->
+              <span
+                class="absolute top-[16px] left-[16px] bg-[#fff] rounded-[4px] flex justify-center items-center w-full max-w-[63px] py-[4px] font-Inter text-[16px] leading-[16px] font-bold"
+              >
+                HOT
+              </span>
+              <!-- card item tag2 -->
+              <span
+                class="absolute top-[48px] left-[16px] bg-color-green rounded-[4px] flex justify-center items-center w-full max-w-[63px] py-[4px] font-Inter text-[16px] leading-[16px] font-bold text-color-white-80"
+              >
+                -50%
+              </span>
+              <!-- cart item image box -->
+              <img
+                class="w-full h-full object-cover"
+                src="./image/cart2.png"
+                alt=""
+              />
+              <!-- cart item button -->
+              <div
+                class="absolute top-[120%] left-[50%] translate-x-[-50%] bg-color-black-80 w-full max-w-[230px] py-[9px] rounded-[8px] font-Inter text-[16px] leading-[28px] font-medium tracking-[-0.4px] text-color-white-80 text-center shadow-ButtonShadow transition-all group-hover:top-[83%] cursor-pointer border-color-black-80 border-[2px] hover:bg-[#fff] hover:text-color-black-80"
+              >
+                Add to cart
+              </div>
+            </div>
+            <!-- card item title box -->
+            <div class="w-full">
+              <div
+                class="w-full max-w-[88px] flex justify-start items-center gap-[2px]"
+              >
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.53834 1.10997C6.70914 0.699319 7.29086 0.699318 7.46166 1.10996L8.99874 4.80556C9.07075 4.97868 9.23355 5.09696 9.42045 5.11194L13.4102 5.4318C13.8535 5.46734 14.0332 6.02059 13.6955 6.30993L10.6557 8.91378C10.5133 9.03576 10.4512 9.22715 10.4947 9.40952L11.4234 13.3028C11.5265 13.7354 11.0559 14.0773 10.6764 13.8455L7.26063 11.7592C7.10062 11.6615 6.89938 11.6615 6.73937 11.7592L3.32363 13.8455C2.94408 14.0773 2.47345 13.7354 2.57665 13.3028L3.50534 9.40952C3.54884 9.22715 3.48665 9.03576 3.34426 8.91378L0.304527 6.30993C-0.0332418 6.02059 0.14652 5.46734 0.589847 5.4318L4.57955 5.11194C4.76645 5.09696 4.92925 4.97868 5.00126 4.80556L6.53834 1.10997Z"
+                    fill="#343839"
+                  />
+                </svg>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.53834 1.10997C6.70914 0.699319 7.29086 0.699318 7.46166 1.10996L8.99874 4.80556C9.07075 4.97868 9.23355 5.09696 9.42045 5.11194L13.4102 5.4318C13.8535 5.46734 14.0332 6.02059 13.6955 6.30993L10.6557 8.91378C10.5133 9.03576 10.4512 9.22715 10.4947 9.40952L11.4234 13.3028C11.5265 13.7354 11.0559 14.0773 10.6764 13.8455L7.26063 11.7592C7.10062 11.6615 6.89938 11.6615 6.73937 11.7592L3.32363 13.8455C2.94408 14.0773 2.47345 13.7354 2.57665 13.3028L3.50534 9.40952C3.54884 9.22715 3.48665 9.03576 3.34426 8.91378L0.304527 6.30993C-0.0332418 6.02059 0.14652 5.46734 0.589847 5.4318L4.57955 5.11194C4.76645 5.09696 4.92925 4.97868 5.00126 4.80556L6.53834 1.10997Z"
+                    fill="#343839"
+                  />
+                </svg>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.53834 1.10997C6.70914 0.699319 7.29086 0.699318 7.46166 1.10996L8.99874 4.80556C9.07075 4.97868 9.23355 5.09696 9.42045 5.11194L13.4102 5.4318C13.8535 5.46734 14.0332 6.02059 13.6955 6.30993L10.6557 8.91378C10.5133 9.03576 10.4512 9.22715 10.4947 9.40952L11.4234 13.3028C11.5265 13.7354 11.0559 14.0773 10.6764 13.8455L7.26063 11.7592C7.10062 11.6615 6.89938 11.6615 6.73937 11.7592L3.32363 13.8455C2.94408 14.0773 2.47345 13.7354 2.57665 13.3028L3.50534 9.40952C3.54884 9.22715 3.48665 9.03576 3.34426 8.91378L0.304527 6.30993C-0.0332418 6.02059 0.14652 5.46734 0.589847 5.4318L4.57955 5.11194C4.76645 5.09696 4.92925 4.97868 5.00126 4.80556L6.53834 1.10997Z"
+                    fill="#343839"
+                  />
+                </svg>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.53834 1.10997C6.70914 0.699319 7.29086 0.699318 7.46166 1.10996L8.99874 4.80556C9.07075 4.97868 9.23355 5.09696 9.42045 5.11194L13.4102 5.4318C13.8535 5.46734 14.0332 6.02059 13.6955 6.30993L10.6557 8.91378C10.5133 9.03576 10.4512 9.22715 10.4947 9.40952L11.4234 13.3028C11.5265 13.7354 11.0559 14.0773 10.6764 13.8455L7.26063 11.7592C7.10062 11.6615 6.89938 11.6615 6.73937 11.7592L3.32363 13.8455C2.94408 14.0773 2.47345 13.7354 2.57665 13.3028L3.50534 9.40952C3.54884 9.22715 3.48665 9.03576 3.34426 8.91378L0.304527 6.30993C-0.0332418 6.02059 0.14652 5.46734 0.589847 5.4318L4.57955 5.11194C4.76645 5.09696 4.92925 4.97868 5.00126 4.80556L6.53834 1.10997Z"
+                    fill="#343839"
+                  />
+                </svg>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.53834 1.10997C6.70914 0.699319 7.29086 0.699318 7.46166 1.10996L8.99874 4.80556C9.07075 4.97868 9.23355 5.09696 9.42045 5.11194L13.4102 5.4318C13.8535 5.46734 14.0332 6.02059 13.6955 6.30993L10.6557 8.91378C10.5133 9.03576 10.4512 9.22715 10.4947 9.40952L11.4234 13.3028C11.5265 13.7354 11.0559 14.0773 10.6764 13.8455L7.26063 11.7592C7.10062 11.6615 6.89938 11.6615 6.73937 11.7592L3.32363 13.8455C2.94408 14.0773 2.47345 13.7354 2.57665 13.3028L3.50534 9.40952C3.54884 9.22715 3.48665 9.03576 3.34426 8.91378L0.304527 6.30993C-0.0332418 6.02059 0.14652 5.46734 0.589847 5.4318L4.57955 5.11194C4.76645 5.09696 4.92925 4.97868 5.00126 4.80556L6.53834 1.10997Z"
+                    fill="#343839"
+                  />
+                </svg>
+              </div>
+              <h2
+                class="font-Inter text-[16px] leading-[26px] text-color-black-80 mt-[4px] font-semibold"
+              >
+                Greg Norman - Men's Shark Logo Golf Polo Shirt
+              </h2>
+              <p
+                class="mt-[4px] font-Inter font-semibold text-[14px] leading-[22px] text-[#121212] flex gap-[12px]"
+              >
+                $24.99
+                <span class="text-[#6C7275] line-through">$40.00</span>
+              </p>
+            </div>
+          </div>
+          <!-- card Items -->
+          <div
+            class="w-full max-w-[262px] min-w-[262px] flex flex-col gap-[12px] group transition"
+          >
+            <!-- card item top box -->
+            <div class="w-full h-[349px] relative overflow-hidden">
+              <!-- card item tag -->
+              <span
+                class="absolute top-[16px] left-[16px] bg-[#fff] rounded-[4px] flex justify-center items-center w-full max-w-[63px] py-[4px] font-Inter text-[16px] leading-[16px] font-bold"
+              >
+                HOT
+              </span>
+              <!-- cart item image box -->
+              <img
+                class="w-full h-full object-cover"
+                src="./image/cart3.png"
+                alt=""
+              />
+              <!-- cart item button -->
+              <div
+                class="absolute top-[120%] left-[50%] translate-x-[-50%] bg-color-black-80 w-full max-w-[230px] py-[9px] rounded-[8px] font-Inter text-[16px] leading-[28px] font-medium tracking-[-0.4px] text-color-white-80 text-center shadow-ButtonShadow transition-all group-hover:top-[83%] cursor-pointer border-color-black-80 border-[2px] hover:bg-[#fff] hover:text-color-black-80"
+              >
+                Add to cart
+              </div>
+            </div>
+            <!-- card item title box -->
+            <div class="w-full">
+              <div
+                class="w-full max-w-[88px] flex justify-start items-center gap-[2px]"
+              >
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.53834 1.10997C6.70914 0.699319 7.29086 0.699318 7.46166 1.10996L8.99874 4.80556C9.07075 4.97868 9.23355 5.09696 9.42045 5.11194L13.4102 5.4318C13.8535 5.46734 14.0332 6.02059 13.6955 6.30993L10.6557 8.91378C10.5133 9.03576 10.4512 9.22715 10.4947 9.40952L11.4234 13.3028C11.5265 13.7354 11.0559 14.0773 10.6764 13.8455L7.26063 11.7592C7.10062 11.6615 6.89938 11.6615 6.73937 11.7592L3.32363 13.8455C2.94408 14.0773 2.47345 13.7354 2.57665 13.3028L3.50534 9.40952C3.54884 9.22715 3.48665 9.03576 3.34426 8.91378L0.304527 6.30993C-0.0332418 6.02059 0.14652 5.46734 0.589847 5.4318L4.57955 5.11194C4.76645 5.09696 4.92925 4.97868 5.00126 4.80556L6.53834 1.10997Z"
+                    fill="#343839"
+                  />
+                </svg>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.53834 1.10997C6.70914 0.699319 7.29086 0.699318 7.46166 1.10996L8.99874 4.80556C9.07075 4.97868 9.23355 5.09696 9.42045 5.11194L13.4102 5.4318C13.8535 5.46734 14.0332 6.02059 13.6955 6.30993L10.6557 8.91378C10.5133 9.03576 10.4512 9.22715 10.4947 9.40952L11.4234 13.3028C11.5265 13.7354 11.0559 14.0773 10.6764 13.8455L7.26063 11.7592C7.10062 11.6615 6.89938 11.6615 6.73937 11.7592L3.32363 13.8455C2.94408 14.0773 2.47345 13.7354 2.57665 13.3028L3.50534 9.40952C3.54884 9.22715 3.48665 9.03576 3.34426 8.91378L0.304527 6.30993C-0.0332418 6.02059 0.14652 5.46734 0.589847 5.4318L4.57955 5.11194C4.76645 5.09696 4.92925 4.97868 5.00126 4.80556L6.53834 1.10997Z"
+                    fill="#343839"
+                  />
+                </svg>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.53834 1.10997C6.70914 0.699319 7.29086 0.699318 7.46166 1.10996L8.99874 4.80556C9.07075 4.97868 9.23355 5.09696 9.42045 5.11194L13.4102 5.4318C13.8535 5.46734 14.0332 6.02059 13.6955 6.30993L10.6557 8.91378C10.5133 9.03576 10.4512 9.22715 10.4947 9.40952L11.4234 13.3028C11.5265 13.7354 11.0559 14.0773 10.6764 13.8455L7.26063 11.7592C7.10062 11.6615 6.89938 11.6615 6.73937 11.7592L3.32363 13.8455C2.94408 14.0773 2.47345 13.7354 2.57665 13.3028L3.50534 9.40952C3.54884 9.22715 3.48665 9.03576 3.34426 8.91378L0.304527 6.30993C-0.0332418 6.02059 0.14652 5.46734 0.589847 5.4318L4.57955 5.11194C4.76645 5.09696 4.92925 4.97868 5.00126 4.80556L6.53834 1.10997Z"
+                    fill="#343839"
+                  />
+                </svg>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.53834 1.10997C6.70914 0.699319 7.29086 0.699318 7.46166 1.10996L8.99874 4.80556C9.07075 4.97868 9.23355 5.09696 9.42045 5.11194L13.4102 5.4318C13.8535 5.46734 14.0332 6.02059 13.6955 6.30993L10.6557 8.91378C10.5133 9.03576 10.4512 9.22715 10.4947 9.40952L11.4234 13.3028C11.5265 13.7354 11.0559 14.0773 10.6764 13.8455L7.26063 11.7592C7.10062 11.6615 6.89938 11.6615 6.73937 11.7592L3.32363 13.8455C2.94408 14.0773 2.47345 13.7354 2.57665 13.3028L3.50534 9.40952C3.54884 9.22715 3.48665 9.03576 3.34426 8.91378L0.304527 6.30993C-0.0332418 6.02059 0.14652 5.46734 0.589847 5.4318L4.57955 5.11194C4.76645 5.09696 4.92925 4.97868 5.00126 4.80556L6.53834 1.10997Z"
+                    fill="#343839"
+                  />
+                </svg>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.53834 1.10997C6.70914 0.699319 7.29086 0.699318 7.46166 1.10996L8.99874 4.80556C9.07075 4.97868 9.23355 5.09696 9.42045 5.11194L13.4102 5.4318C13.8535 5.46734 14.0332 6.02059 13.6955 6.30993L10.6557 8.91378C10.5133 9.03576 10.4512 9.22715 10.4947 9.40952L11.4234 13.3028C11.5265 13.7354 11.0559 14.0773 10.6764 13.8455L7.26063 11.7592C7.10062 11.6615 6.89938 11.6615 6.73937 11.7592L3.32363 13.8455C2.94408 14.0773 2.47345 13.7354 2.57665 13.3028L3.50534 9.40952C3.54884 9.22715 3.48665 9.03576 3.34426 8.91378L0.304527 6.30993C-0.0332418 6.02059 0.14652 5.46734 0.589847 5.4318L4.57955 5.11194C4.76645 5.09696 4.92925 4.97868 5.00126 4.80556L6.53834 1.10997Z"
+                    fill="#343839"
+                  />
+                </svg>
+              </div>
+              <h2
+                class="font-Inter text-[16px] leading-[26px] text-color-black-80 mt-[4px] font-semibold"
+              >
+                G/FORE - Mens Left Glove Snow 2023
+              </h2>
+              <p
+                class="mt-[4px] font-Inter font-semibold text-[14px] leading-[22px] text-[#121212] flex gap-[12px]"
+              >
+                $30.00
+              </p>
+            </div>
+          </div>
+          <!-- card Items -->
+          <div
+            class="w-full max-w-[262px] min-w-[262px] flex flex-col gap-[12px] group transition"
+          >
+            <!-- card item top box -->
+            <div class="w-full h-[349px] relative overflow-hidden">
+              <!-- card item tag -->
+              <span
+                class="absolute top-[16px] left-[16px] bg-[#fff] rounded-[4px] flex justify-center items-center w-full max-w-[63px] py-[4px] font-Inter text-[16px] leading-[16px] font-bold"
+              >
+                HOT
+              </span>
+              <!-- cart item image box -->
+              <img
+                class="w-full h-full object-cover"
+                src="./image/cart4.png"
+                alt=""
+              />
+              <!-- cart item button -->
+              <div
+                class="absolute top-[120%] left-[50%] translate-x-[-50%] bg-color-black-80 w-full max-w-[230px] py-[9px] rounded-[8px] font-Inter text-[16px] leading-[28px] font-medium tracking-[-0.4px] text-color-white-80 text-center shadow-ButtonShadow transition-all group-hover:top-[83%] cursor-pointer border-color-black-80 border-[2px] hover:bg-[#fff] hover:text-color-black-80"
+              >
+                Add to cart
+              </div>
+            </div>
+            <!-- card item title box -->
+            <div class="w-full">
+              <div
+                class="w-full max-w-[88px] flex justify-start items-center gap-[2px]"
+              >
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.53834 1.10997C6.70914 0.699319 7.29086 0.699318 7.46166 1.10996L8.99874 4.80556C9.07075 4.97868 9.23355 5.09696 9.42045 5.11194L13.4102 5.4318C13.8535 5.46734 14.0332 6.02059 13.6955 6.30993L10.6557 8.91378C10.5133 9.03576 10.4512 9.22715 10.4947 9.40952L11.4234 13.3028C11.5265 13.7354 11.0559 14.0773 10.6764 13.8455L7.26063 11.7592C7.10062 11.6615 6.89938 11.6615 6.73937 11.7592L3.32363 13.8455C2.94408 14.0773 2.47345 13.7354 2.57665 13.3028L3.50534 9.40952C3.54884 9.22715 3.48665 9.03576 3.34426 8.91378L0.304527 6.30993C-0.0332418 6.02059 0.14652 5.46734 0.589847 5.4318L4.57955 5.11194C4.76645 5.09696 4.92925 4.97868 5.00126 4.80556L6.53834 1.10997Z"
+                    fill="#343839"
+                  />
+                </svg>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.53834 1.10997C6.70914 0.699319 7.29086 0.699318 7.46166 1.10996L8.99874 4.80556C9.07075 4.97868 9.23355 5.09696 9.42045 5.11194L13.4102 5.4318C13.8535 5.46734 14.0332 6.02059 13.6955 6.30993L10.6557 8.91378C10.5133 9.03576 10.4512 9.22715 10.4947 9.40952L11.4234 13.3028C11.5265 13.7354 11.0559 14.0773 10.6764 13.8455L7.26063 11.7592C7.10062 11.6615 6.89938 11.6615 6.73937 11.7592L3.32363 13.8455C2.94408 14.0773 2.47345 13.7354 2.57665 13.3028L3.50534 9.40952C3.54884 9.22715 3.48665 9.03576 3.34426 8.91378L0.304527 6.30993C-0.0332418 6.02059 0.14652 5.46734 0.589847 5.4318L4.57955 5.11194C4.76645 5.09696 4.92925 4.97868 5.00126 4.80556L6.53834 1.10997Z"
+                    fill="#343839"
+                  />
+                </svg>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.53834 1.10997C6.70914 0.699319 7.29086 0.699318 7.46166 1.10996L8.99874 4.80556C9.07075 4.97868 9.23355 5.09696 9.42045 5.11194L13.4102 5.4318C13.8535 5.46734 14.0332 6.02059 13.6955 6.30993L10.6557 8.91378C10.5133 9.03576 10.4512 9.22715 10.4947 9.40952L11.4234 13.3028C11.5265 13.7354 11.0559 14.0773 10.6764 13.8455L7.26063 11.7592C7.10062 11.6615 6.89938 11.6615 6.73937 11.7592L3.32363 13.8455C2.94408 14.0773 2.47345 13.7354 2.57665 13.3028L3.50534 9.40952C3.54884 9.22715 3.48665 9.03576 3.34426 8.91378L0.304527 6.30993C-0.0332418 6.02059 0.14652 5.46734 0.589847 5.4318L4.57955 5.11194C4.76645 5.09696 4.92925 4.97868 5.00126 4.80556L6.53834 1.10997Z"
+                    fill="#343839"
+                  />
+                </svg>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.53834 1.10997C6.70914 0.699319 7.29086 0.699318 7.46166 1.10996L8.99874 4.80556C9.07075 4.97868 9.23355 5.09696 9.42045 5.11194L13.4102 5.4318C13.8535 5.46734 14.0332 6.02059 13.6955 6.30993L10.6557 8.91378C10.5133 9.03576 10.4512 9.22715 10.4947 9.40952L11.4234 13.3028C11.5265 13.7354 11.0559 14.0773 10.6764 13.8455L7.26063 11.7592C7.10062 11.6615 6.89938 11.6615 6.73937 11.7592L3.32363 13.8455C2.94408 14.0773 2.47345 13.7354 2.57665 13.3028L3.50534 9.40952C3.54884 9.22715 3.48665 9.03576 3.34426 8.91378L0.304527 6.30993C-0.0332418 6.02059 0.14652 5.46734 0.589847 5.4318L4.57955 5.11194C4.76645 5.09696 4.92925 4.97868 5.00126 4.80556L6.53834 1.10997Z"
+                    fill="#343839"
+                  />
+                </svg>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.53834 1.10997C6.70914 0.699319 7.29086 0.699318 7.46166 1.10996L8.99874 4.80556C9.07075 4.97868 9.23355 5.09696 9.42045 5.11194L13.4102 5.4318C13.8535 5.46734 14.0332 6.02059 13.6955 6.30993L10.6557 8.91378C10.5133 9.03576 10.4512 9.22715 10.4947 9.40952L11.4234 13.3028C11.5265 13.7354 11.0559 14.0773 10.6764 13.8455L7.26063 11.7592C7.10062 11.6615 6.89938 11.6615 6.73937 11.7592L3.32363 13.8455C2.94408 14.0773 2.47345 13.7354 2.57665 13.3028L3.50534 9.40952C3.54884 9.22715 3.48665 9.03576 3.34426 8.91378L0.304527 6.30993C-0.0332418 6.02059 0.14652 5.46734 0.589847 5.4318L4.57955 5.11194C4.76645 5.09696 4.92925 4.97868 5.00126 4.80556L6.53834 1.10997Z"
+                    fill="#343839"
+                  />
+                </svg>
+              </div>
+              <h2
+                class="font-Inter text-[16px] leading-[26px] text-color-black-80 mt-[4px] font-semibold"
+              >
+                Utility Rover-R Double Strap Bag All Black - 2023
+              </h2>
+              <p
+                class="mt-[4px] font-Inter font-semibold text-[14px] leading-[22px] text-[#121212] flex gap-[12px]"
+              >
+                $209.99
+              </p>
+            </div>
+          </div>
+          <!-- card Items -->
+          <div
+            class="w-full max-w-[262px] min-w-[262px] flex flex-col gap-[12px] group transition"
+          >
+            <!-- card item top box -->
+            <div class="w-full h-[349px] relative overflow-hidden">
+              <!-- card item tag -->
+              <span
+                class="absolute top-[16px] left-[16px] bg-[#fff] rounded-[4px] flex justify-center items-center w-full max-w-[63px] py-[4px] font-Inter text-[16px] leading-[16px] font-bold"
+              >
+                HOT
+              </span>
+              <!-- card item tag2 -->
+              <span
+                class="absolute top-[48px] left-[16px] bg-color-green rounded-[4px] flex justify-center items-center w-full max-w-[63px] py-[4px] font-Inter text-[16px] leading-[16px] font-bold text-color-white-80"
+              >
+                -50%
+              </span>
+              <!-- cart item image box -->
+              <img
+                class="w-full h-full object-cover"
+                src="./image/cart5.png"
+                alt=""
+              />
+              <!-- cart item button -->
+              <div
+                class="absolute top-[120%] left-[50%] translate-x-[-50%] bg-color-black-80 w-full max-w-[230px] py-[9px] rounded-[8px] font-Inter text-[16px] leading-[28px] font-medium tracking-[-0.4px] text-color-white-80 text-center shadow-ButtonShadow transition-all group-hover:top-[83%] cursor-pointer border-color-black-80 border-[2px] hover:bg-[#fff] hover:text-color-black-80"
+              >
+                Add to cart
+              </div>
+            </div>
+            <!-- card item title box -->
+            <div class="w-full">
+              <div
+                class="w-full max-w-[88px] flex justify-start items-center gap-[2px]"
+              >
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.53834 1.10997C6.70914 0.699319 7.29086 0.699318 7.46166 1.10996L8.99874 4.80556C9.07075 4.97868 9.23355 5.09696 9.42045 5.11194L13.4102 5.4318C13.8535 5.46734 14.0332 6.02059 13.6955 6.30993L10.6557 8.91378C10.5133 9.03576 10.4512 9.22715 10.4947 9.40952L11.4234 13.3028C11.5265 13.7354 11.0559 14.0773 10.6764 13.8455L7.26063 11.7592C7.10062 11.6615 6.89938 11.6615 6.73937 11.7592L3.32363 13.8455C2.94408 14.0773 2.47345 13.7354 2.57665 13.3028L3.50534 9.40952C3.54884 9.22715 3.48665 9.03576 3.34426 8.91378L0.304527 6.30993C-0.0332418 6.02059 0.14652 5.46734 0.589847 5.4318L4.57955 5.11194C4.76645 5.09696 4.92925 4.97868 5.00126 4.80556L6.53834 1.10997Z"
+                    fill="#343839"
+                  />
+                </svg>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.53834 1.10997C6.70914 0.699319 7.29086 0.699318 7.46166 1.10996L8.99874 4.80556C9.07075 4.97868 9.23355 5.09696 9.42045 5.11194L13.4102 5.4318C13.8535 5.46734 14.0332 6.02059 13.6955 6.30993L10.6557 8.91378C10.5133 9.03576 10.4512 9.22715 10.4947 9.40952L11.4234 13.3028C11.5265 13.7354 11.0559 14.0773 10.6764 13.8455L7.26063 11.7592C7.10062 11.6615 6.89938 11.6615 6.73937 11.7592L3.32363 13.8455C2.94408 14.0773 2.47345 13.7354 2.57665 13.3028L3.50534 9.40952C3.54884 9.22715 3.48665 9.03576 3.34426 8.91378L0.304527 6.30993C-0.0332418 6.02059 0.14652 5.46734 0.589847 5.4318L4.57955 5.11194C4.76645 5.09696 4.92925 4.97868 5.00126 4.80556L6.53834 1.10997Z"
+                    fill="#343839"
+                  />
+                </svg>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.53834 1.10997C6.70914 0.699319 7.29086 0.699318 7.46166 1.10996L8.99874 4.80556C9.07075 4.97868 9.23355 5.09696 9.42045 5.11194L13.4102 5.4318C13.8535 5.46734 14.0332 6.02059 13.6955 6.30993L10.6557 8.91378C10.5133 9.03576 10.4512 9.22715 10.4947 9.40952L11.4234 13.3028C11.5265 13.7354 11.0559 14.0773 10.6764 13.8455L7.26063 11.7592C7.10062 11.6615 6.89938 11.6615 6.73937 11.7592L3.32363 13.8455C2.94408 14.0773 2.47345 13.7354 2.57665 13.3028L3.50534 9.40952C3.54884 9.22715 3.48665 9.03576 3.34426 8.91378L0.304527 6.30993C-0.0332418 6.02059 0.14652 5.46734 0.589847 5.4318L4.57955 5.11194C4.76645 5.09696 4.92925 4.97868 5.00126 4.80556L6.53834 1.10997Z"
+                    fill="#343839"
+                  />
+                </svg>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.53834 1.10997C6.70914 0.699319 7.29086 0.699318 7.46166 1.10996L8.99874 4.80556C9.07075 4.97868 9.23355 5.09696 9.42045 5.11194L13.4102 5.4318C13.8535 5.46734 14.0332 6.02059 13.6955 6.30993L10.6557 8.91378C10.5133 9.03576 10.4512 9.22715 10.4947 9.40952L11.4234 13.3028C11.5265 13.7354 11.0559 14.0773 10.6764 13.8455L7.26063 11.7592C7.10062 11.6615 6.89938 11.6615 6.73937 11.7592L3.32363 13.8455C2.94408 14.0773 2.47345 13.7354 2.57665 13.3028L3.50534 9.40952C3.54884 9.22715 3.48665 9.03576 3.34426 8.91378L0.304527 6.30993C-0.0332418 6.02059 0.14652 5.46734 0.589847 5.4318L4.57955 5.11194C4.76645 5.09696 4.92925 4.97868 5.00126 4.80556L6.53834 1.10997Z"
+                    fill="#343839"
+                  />
+                </svg>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.53834 1.10997C6.70914 0.699319 7.29086 0.699318 7.46166 1.10996L8.99874 4.80556C9.07075 4.97868 9.23355 5.09696 9.42045 5.11194L13.4102 5.4318C13.8535 5.46734 14.0332 6.02059 13.6955 6.30993L10.6557 8.91378C10.5133 9.03576 10.4512 9.22715 10.4947 9.40952L11.4234 13.3028C11.5265 13.7354 11.0559 14.0773 10.6764 13.8455L7.26063 11.7592C7.10062 11.6615 6.89938 11.6615 6.73937 11.7592L3.32363 13.8455C2.94408 14.0773 2.47345 13.7354 2.57665 13.3028L3.50534 9.40952C3.54884 9.22715 3.48665 9.03576 3.34426 8.91378L0.304527 6.30993C-0.0332418 6.02059 0.14652 5.46734 0.589847 5.4318L4.57955 5.11194C4.76645 5.09696 4.92925 4.97868 5.00126 4.80556L6.53834 1.10997Z"
+                    fill="#343839"
+                  />
+                </svg>
+              </div>
+              <h2
+                class="font-Inter text-[16px] leading-[26px] text-color-black-80 mt-[4px] font-semibold"
+              >
+                Air Jordan 1 Low G Black/Black/Iron Grey - SS23
+              </h2>
+              <p
+                class="mt-[4px] font-Inter font-semibold text-[14px] leading-[22px] text-[#121212] flex gap-[12px]"
+              >
+                $111.99
+                <span class="text-[#6C7275]">$200.00</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category Section -->
+      <div
+        class="w-full max-w-[1120px] mx-auto py-[80px] max-lg-1120:px-[32px]"
+      >
+        <!-- Category Title -->
+        <h1
+          class="text-[40px] font-Poppins font-medium leading-[44px] tracking-[-0.4px] text-center"
+        >
+          Shop by Categories
+        </h1>
+        <!-- Category cards -->
+        <div
+          class="mt-[48px] w-full flex gap-[48px_24px] flex-wrap max-lg-1120:justify-center"
+        >
+          <!-- Category card -->
+          <div class="w-full max-w-[357px]">
+            <div class="w-full h-[309px]">
+              <img
+                class="w-full h-full object-cover"
+                src="./image/category1.png"
+                alt=""
+              />
+            </div>
+            <h2
+              class="font-Poppins font-medium text-[20px] leading-[28px] text-color-black-50 text-center mt-[24px]"
+            >
+              Golf Clubs
+            </h2>
+          </div>
+          <div class="w-full max-w-[357px]">
+            <div class="w-full h-[309px]">
+              <img
+                class="w-full h-full object-cover"
+                src="./image/category2.png"
+                alt=""
+              />
+            </div>
+            <h2
+              class="font-Poppins font-medium text-[20px] leading-[28px] text-color-black-50 text-center mt-[24px]"
+            >
+              Golf Balls
+            </h2>
+          </div>
+          <div class="w-full max-w-[357px]">
+            <div class="w-full h-[309px]">
+              <img
+                class="w-full h-full object-cover"
+                src="./image/category3.png"
+                alt=""
+              />
+            </div>
+            <h2
+              class="font-Poppins font-medium text-[20px] leading-[28px] text-color-black-50 text-center mt-[24px]"
+            >
+              Golf Bags
+            </h2>
+          </div>
+          <div class="w-full max-w-[357px]">
+            <div class="w-full h-[309px]">
+              <img
+                class="w-full h-full object-cover"
+                src="./image/category4.png"
+                alt=""
+              />
+            </div>
+            <h2
+              class="font-Poppins font-medium text-[20px] leading-[28px] text-color-black-50 text-center mt-[24px]"
+            >
+              Clothing & Rainwear
+            </h2>
+          </div>
+          <div class="w-full max-w-[357px]">
+            <div class="w-full h-[309px]">
+              <img
+                class="w-full h-full object-cover"
+                src="./image/category5.png"
+                alt=""
+              />
+            </div>
+            <h2
+              class="font-Poppins font-medium text-[20px] leading-[28px] text-color-black-50 text-center mt-[24px]"
+            >
+              Footwear
+            </h2>
+          </div>
+          <div class="w-full max-w-[357px]">
+            <div class="w-full h-[309px]">
+              <img
+                class="w-full h-full object-cover"
+                src="./image/category6.png"
+                alt=""
+              />
+            </div>
+            <h2
+              class="font-Poppins font-medium text-[20px] leading-[28px] text-color-black-50 text-center mt-[24px]"
+            >
+              Accessories
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <!-- Limited Edition Banner -->
+      <div class="w-full flex mt-[80px] max-md-992:flex-col-reverse">
+        <!-- Limited Edition Banner image box -->
+        <div
+          class="w-full max-w-[720px] h-[532px] max-md-992:max-w-full max-sm-546:h-[300px]"
+        >
+          <img
+            class="w-full h-full object-cover"
+            src="./image/bannerLimitedEdition.png"
+            alt=""
+          />
+        </div>
+        <!-- Limited Edition Banner text box-->
+        <div
+          class="w-full max-w-[720px] flex justify-center items-center bg-color-black-80 max-md-992:py-[28.5px] max-md-992:max-w-full max-sm-546:px-[32px]"
+        >
+          <!-- Limited Edition Banner title box inside of text box -->
+          <div class="w-full max-w-[452px]">
+            <span
+              class="font-Inter text-[16px] leading-[16px] font-bold text-color-green uppercase"
+              >Limited Edition</span
+            >
+            <h1
+              class="font-Poppins text-[40px] leading-[44px] font-medium tracking-[-0.4px] text-color-white-80 mt-[16px]"
+            >
+              Hurry up! 30% OFF
+            </h1>
+            <p
+              class="font-Inter font-normal text-[20px] leading-[32px] text-color-white-80 mt-[16px]"
+            >
+              Find clubs that are right for your game
+            </p>
+            <h3
+              class="font-Inter font-normal text-[16px] leading-[26px] text-color-white-80 mt-[24px]"
+            >
+              Find clubs that are right for your game
+            </h3>
+            <div class="w-full max-w-[288px] flex gap-[16px] mt-[12px]">
+              <div
+                class="w-[60px] h-[60px] bg-color-white-80 flex justify-center items-center font-Poppins font-medium text-[34px] leading-[38px] tracking-[-0.6px]"
+              >
+                02
+              </div>
+              <div
+                class="w-[60px] h-[60px] bg-color-white-80 flex justify-center items-center font-Poppins font-medium text-[34px] leading-[38px] tracking-[-0.6px]"
+              >
+                12
+              </div>
+              <div
+                class="w-[60px] h-[60px] bg-color-white-80 flex justify-center items-center font-Poppins font-medium text-[34px] leading-[38px] tracking-[-0.6px]"
+              >
+                45
+              </div>
+              <div
+                class="w-[60px] h-[60px] bg-color-white-80 flex justify-center items-center font-Poppins font-medium text-[34px] leading-[38px] tracking-[-0.6px]"
+              >
+                05
+              </div>
+            </div>
+            <button
+              class="mt-[44px] w-full max-w-[154px] bg-color-green rounded-[8px] flex justify-center items-center py-[6px] font-Inter font-medium text-[16px] leading-[28px] tracking-[-0.4px] text-color-black-80 border-[2px] border-color-green hover:bg-[transparent] transition hover:text-[#fff]"
+            >
+              Shop now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Shop Collection Box -->
+      <div
+        class="w-full max-w-[1120px] mx-auto mt-[48px] max-lg-1120:px-[15px]"
+      >
+        <!-- Shop Collection Box title -->
+        <h1
+          class="font-Poppins font-medium text-[40px] leading-[44px] tracking-[-0.4px] text-[#000] max-md-885:text-center max-sm-430:text-[34px] max-sm-430:leading-[38px]"
+        >
+          Shop Collection
+        </h1>
+        <!-- Shop Collection Box cards -->
+        <div
+          class="mt-[48px] grid gap-[24px] grid-rows-2 grid-flow-col h-[664px] grid-cols-2 max-md-885:grid-rows-[initial] max-md-885:grid-cols-1 max-md-885:grid-flow-row max-md-885:h-[auto] max-md-885:max-w-[600px] max-md-885:mx-auto"
+        >
+          <!-- Shop Collection Box cards item -->
+          <div
+            class="row-span-3 p-[48px] relative flex items-end max-md-885:row-span-2 max-md-885:h-[677px] max-md-885:col-span-2 max-md-885:w-full max-sm-430:px-[32px] max-sm-430:!h-[477px]"
+          >
+            <!-- Shop Collection Box cards item image box -->
+            <div class="absolute top-0 left-0 w-full h-full z-[-1]">
+              <img
+                class="w-full h-full object-cover"
+                src="./image/collection1.png"
+                alt=""
+              />
+            </div>
+            <!-- Shop Collection Box cards item text box -->
+            <div class="w-full max-w-[360px]">
+              <h1
+                class="font-Poppins font-medium text-[34px] leading-[38px] tracking-[-0.6px] text-[#121212] max-sm-430:text-[28px] max-sm-430:leading-[34px]"
+              >
+                Juniors Set
+              </h1>
+              <a
+                href=""
+                class="max-w-[106px] border-b-[2px] border-[#121212] mt-[12px] font-Inter font-medium text-[16px] leading-[28px] text-[#121212] tracking-[-0.4px] flex gap-[4px] items-center max-sm-430:text-[14px] max-sm-430:leading-[24px]"
+              >
+                Collections
+                <span class="flex justify-center items-center">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4.1665 10H15.8332"
+                      stroke="#121212"
+                      stroke-width="1.25"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M10.8335 15L15.8335 10"
+                      stroke="#121212"
+                      stroke-width="1.25"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M10.8335 5L15.8335 10"
+                      stroke="#121212"
+                      stroke-width="1.25"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div
+            class="col-span-2 p-[48px] relative flex items-end max-md-885:col-span-[initial] max-md-885:h-[320px] max-md-885:row-span-1 max-sm-430:px-[32px] max-sm-430:!h-[220px]"
+          >
+            <!-- Shop Collection Box cards item image box -->
+            <div class="absolute top-0 left-0 w-full h-full z-[-1]">
+              <img
+                class="w-full h-full object-cover"
+                src="./image/collection2.png"
+                alt=""
+              />
+            </div>
+            <!-- Shop Collection Box cards item text box-->
+            <div class="w-full max-w-[360px]">
+              <h1
+                class="font-Poppins font-medium text-[34px] leading-[38px] tracking-[-0.6px] text-[#121212] max-sm-430:text-[28px] max-sm-430:leading-[34px]"
+              >
+                Men’s Set
+              </h1>
+              <a
+                href=""
+                class="max-w-[106px] border-b-[2px] border-[#121212] mt-[12px] font-Inter font-medium text-[16px] leading-[28px] text-[#121212] tracking-[-0.4px] flex gap-[4px] items-center max-sm-430:text-[14px] max-sm-430:leading-[24px]"
+              >
+                Collections
+                <span class="flex justify-center items-center">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4.1665 10H15.8332"
+                      stroke="#121212"
+                      stroke-width="1.25"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M10.8335 15L15.8335 10"
+                      stroke="#121212"
+                      stroke-width="1.25"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M10.8335 5L15.8335 10"
+                      stroke="#121212"
+                      stroke-width="1.25"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div
+            class="row-span-2 col-span-2 p-[48px] relative flex items-end max-md-885:row-span-1 max-md-885:h-[320px] max-md-885:col-span-[initial] max-sm-430:px-[32px] max-sm-430:!h-[220px]"
+          >
+            <!-- Shop Collection Box cards item image box -->
+            <div class="absolute top-0 left-0 w-full h-full z-[-1]">
+              <img
+                class="w-full h-full object-cover"
+                src="./image/collection3.png"
+                alt=""
+              />
+            </div>
+            <!-- Shop Collection Box cards item text box-->
+            <div class="w-full max-w-[360px]">
+              <h1
+                class="font-Poppins font-medium text-[34px] leading-[38px] tracking-[-0.6px] text-[#121212] max-sm-430:text-[28px] max-sm-430:leading-[34px]"
+              >
+                Women’s Set
+              </h1>
+              <a
+                href=""
+                class="max-w-[106px] border-b-[2px] border-[#121212] mt-[12px] font-Inter font-medium text-[16px] leading-[28px] text-[#121212] tracking-[-0.4px] flex gap-[4px] items-center max-sm-430:text-[14px] max-sm-430:leading-[24px]"
+              >
+                Collections
+                <span class="flex justify-center items-center">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4.1665 10H15.8332"
+                      stroke="#121212"
+                      stroke-width="1.25"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M10.8335 15L15.8335 10"
+                      stroke="#121212"
+                      stroke-width="1.25"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M10.8335 5L15.8335 10"
+                      stroke="#121212"
+                      stroke-width="1.25"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Articles Section -->
+      <div
+        class="mt-[128px] w-full max-w-[1120px] mx-auto mb-[80px] max-lg-1120:px-[15px]"
+      >
+        <!-- Articles Section of header -->
+        <div
+          class="w-full flex justify-between items-center gap-[15px] max-sm-430:items-end"
+        >
+          <h1
+            class="font-Poppins font-medium text-[40px] leading-[44px] tracking-[-0.4px] text-[#000] max-sm-430:text-[34px] max-sm-430:leading-[38px]"
+          >
+            Latest Articles
+          </h1>
+          <a
+            href=""
+            class="font-Inter font-medium text-[16px] leading-[28px] tracking-[-0.4px] text-color-black-80 flex gap-[4px] w-full max-w-[103px] border-b-[1px] border-color-black-80 max-sm-430:text-[14px] max-sm-430:leading-[24px]"
+          >
+            View More
+            <span class="flex justify-center items-center">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4.1665 10H15.8332"
+                  stroke="#141718"
+                  stroke-width="1.25"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M10.8335 15L15.8335 10"
+                  stroke="#141718"
+                  stroke-width="1.25"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M10.8335 5L15.8335 10"
+                  stroke="#141718"
+                  stroke-width="1.25"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+          </a>
+        </div>
+        <!-- Articles Section cards -->
+        <div
+          class="mt-[40px] w-full flex gap-[24.5px] max-md-992:gap-[12px] max-md-712:grid max-md-712:grid-cols-2 max-sm-430:!grid-cols-1 max-sm-430:!gap-[24px]"
+        >
+          <!-- Articles Section cards item -->
+          <div class="w-full max-w-[357px]">
+            <div class="w-full h-[325px] max-md-992:h-[225px]">
+              <img
+                class="w-full h-full object-cover"
+                src="./image/articles1.png"
+                alt=""
+              />
+            </div>
+            <h1
+              class="mt-[24px] font-Poppins font-medium text-[20px] leading-[28px] text-color-black-50 max-md-992:text-[18px] max-md-992:leading-[22px]"
+            >
+              Air Jordan x Travis Scott Event
+            </h1>
+            <a
+              class="mt-[8px] font-Inter font-medium text-[16px] leading-[28px] text-color-black-80 flex gap-[4px] border-b-[2px] max-w-[107px]"
+              href=""
+            >
+              Read More
+              <span class="flex justify-center items-center">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.1665 10H15.8332"
+                    stroke="#6C7275"
+                    stroke-width="1.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M10.8335 15L15.8335 10"
+                    stroke="#6C7275"
+                    stroke-width="1.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M10.8335 5L15.8335 10"
+                    stroke="#6C7275"
+                    stroke-width="1.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+            </a>
+          </div>
+          <div class="w-full max-w-[357px]">
+            <div class="w-full h-[325px] max-md-992:h-[225px]">
+              <img
+                class="w-full h-full object-cover"
+                src="./image/articles2.png"
+                alt=""
+              />
+            </div>
+            <h1
+              class="mt-[24px] font-Poppins font-medium text-[20px] leading-[28px] text-color-black-50 max-md-992:text-[18px] max-md-992:leading-[22px]"
+            >
+              The timeless classics on the green
+            </h1>
+            <a
+              href=""
+              class="mt-[8px] font-Inter font-medium text-[16px] leading-[28px] text-color-black-80 flex gap-[4px] border-b-[2px] max-w-[107px]"
+            >
+              Read More
+              <span class="flex justify-center items-center">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.1665 10H15.8332"
+                    stroke="#6C7275"
+                    stroke-width="1.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M10.8335 15L15.8335 10"
+                    stroke="#6C7275"
+                    stroke-width="1.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M10.8335 5L15.8335 10"
+                    stroke="#6C7275"
+                    stroke-width="1.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+            </a>
+          </div>
+          <div class="w-full max-w-[357px]">
+            <div class="w-full h-[325px] max-md-992:h-[225px]">
+              <img
+                class="w-full h-full object-cover"
+                src="./image/articles3.png"
+                alt=""
+              />
+            </div>
+            <h1
+              class="mt-[24px] font-Poppins font-medium text-[20px] leading-[28px] text-color-black-50 max-md-992:text-[18px] max-md-992:leading-[22px]"
+            >
+              The 2023 Ryder Cup
+            </h1>
+            <a
+              href=""
+              class="mt-[8px] font-Inter font-medium text-[16px] leading-[28px] text-color-black-80 flex gap-[4px] border-b-[2px] max-w-[107px]"
+            >
+              Read More
+              <span class="flex justify-center items-center">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.1665 10H15.8332"
+                    stroke="#6C7275"
+                    stroke-width="1.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M10.8335 15L15.8335 10"
+                    stroke="#6C7275"
+                    stroke-width="1.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M10.8335 5L15.8335 10"
+                    stroke="#6C7275"
+                    stroke-width="1.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Join Section -->
+      <div
+        class="w-full relative h-[360px] flex justify-center items-center max-lg-1120:px-[32px]"
+      >
+        <!-- Join Section Image Box -->
+        <div class="absolute top-0 left-0 w-full h-full z-[-1]">
+          <img
+            class="w-full h-full object-cover"
+            src="./image/joinSectionImage.png"
+            alt=""
+          />
+        </div>
+        <!-- Join Section Text Box -->
+        <div class="w-full max-w-[540px] text-center">
+          <h1
+            class="font-Poppins font-medium text-[40px] leading-[44px] tracking-[-0.4px] text-color-white-80 max-sm-430:text-[28px] max-sm-430:leading-[34px]"
+          >
+            Join Our Newsletter
+          </h1>
+          <p
+            class="font-Inter font-normal text-[18px] leading-[30px] text-color-white-80 mt-[8px] max-sm-430:text-[14px] max-sm-430:leading-[22px]"
+          >
+            Sign up for deals, new products and promotions
+          </p>
+          <form
+            action=""
+            class="mt-[32px] w-full max-w-[488px] flex justify-between items-center gap-[8px] mx-auto border-b-[1px] border-color-white-80 pb-[12px]"
+          >
+            <span class="flex justify-center items-center">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M4.07675 6.53075C4.23299 6.01858 4.70925 5.646 5.27254 5.646H19.2725C19.8358 5.646 20.3121 6.01858 20.4683 6.53075L12.2725 11.9946L4.07675 6.53075ZM2.52257 6.88226C2.52244 6.89026 2.52242 6.89826 2.52254 6.90625V16.896C2.52254 18.4148 3.75376 19.646 5.27254 19.646H19.2725C20.7913 19.646 22.0225 18.4148 22.0225 16.896V6.90622M20.5225 8.29738V16.896C20.5225 17.5864 19.9629 18.146 19.2725 18.146H5.27254C4.58218 18.146 4.02254 17.5864 4.02254 16.896V8.29738L11.8565 13.52C12.1084 13.688 12.4366 13.688 12.6886 13.52L20.5225 8.29738ZM22.0225 6.88229C22.0151 5.36981 20.7868 4.146 19.2725 4.146H5.27254C3.75834 4.146 2.52997 5.3698 2.52257 6.88226"
+                  fill="#FEFEFE"
+                />
+              </svg>
+            </span>
+            <input
+              class="w-full max-w-[396px] bg-[transparent] h-full font-Inter font-medium text-[16px] leading-[28px] tracking-[-0.4px] text-color-white-80 outline-none"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email address"
+            />
+            <button
+              class="font-Inter font-medium text-[16px] leading-[28px] tracking-[-0.4px] text-color-white-80"
+            >
+              Signup
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Social Media Box -->
+      <div class="w-full mt-[40px]">
+        <!-- Social Media Text Box -->
+        <div
+          class="w-full max-w-[544px] mx-auto text-center max-lg-1120:px-[32px]"
+        >
+          <span
+            class="font-Inter font-bold text-[16px] leading-[16px] text-[#6C7275] uppercase"
+          >
+            newsfeed
+          </span>
+          <h1
+            class="mt-[16px] font-Poppins font-medium text-[40px] leading-[44px] tracking-[-0.4px] text-color-black-80 max-sm-430:text-[34px] max-sm-430:leading-[38px] max-sm-430:tracking-[-0.6px]"
+          >
+            Instagram
+          </h1>
+          <p
+            class="mt-[16px] font-Inter font-normal text-[20px] leading-[32px] text-color-black-80 max-sm-430:text-[14px] max-sm-430:leading-[22px]"
+          >
+            Follow us on social media for more discount & promotions
+          </p>
+          <a
+            href=""
+            class="mt-[16px] font-Poppins font-medium text-[20px] leading-[28px] text-[#6C7275] max-sm-430:text-[]"
+          >
+            @3legant_official
+          </a>
+        </div>
+        <!-- Social Media image box  -->
+        <div
+          class="mt-[40px] grid grid-cols-6 max-md-885:grid-cols-3 max-sm-430:!grid-cols-2"
+        >
+          <div>
+            <img
+              class="w-full h-full object-cover"
+              src="./image/social1.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="w-full h-full object-cover"
+              src="./image/social2.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="w-full h-full object-cover"
+              src="./image/social3.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="w-full h-full object-cover"
+              src="./image/social4.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="w-full h-full object-cover"
+              src="./image/social5.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="w-full h-full object-cover"
+              src="./image/social6.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Section -->
+      <footer
+        class="w-full bg-[#000] pt-[80px] pb-[32px] max-lg-1120:px-[32px]"
+      >
+        <!-- Footer Section inside box -->
+        <div class="w-full max-w-[1120px] mx-auto">
+          <!-- Footer Section top Box -->
+          <div
+            class="w-full flex justify-between gap-[15px] max-md-885:flex-col max-md-885:gap-[32px]"
+          >
+            <!-- Footer Section top left box -->
+            <div
+              class="w-full max-w-[544px] max-lg-1120:border-b-[1px] max-lg-1120:border-[#6C7275] max-lg-1120:pb-[35px]"
+            >
+              <h1
+                class="font-Poppins font-medium text-[24px] leading-[24px] text-[#fff]"
+              >
+                3legant.
+              </h1>
+              <p
+                class="mt-[32px] font-Poppins font-medium text-[20px] leading-[28px] text-color-white-80"
+              >
+                More than just a game. It’s a lifestyle.
+              </p>
+              <div
+                class="flex w-full max-w-[120px] justify-between items-center gap-[24px] mt-[32px]"
+              >
+                <a
+                  href=""
+                  class="w-[24px] h-[24px] flex justify-center items-center"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      x="2"
+                      y="2"
+                      width="20"
+                      height="20"
+                      rx="4"
+                      stroke="#FEFEFE"
+                      stroke-width="1.5"
+                    />
+                    <circle cx="18" cy="6" r="1" fill="#FEFEFE" />
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="5"
+                      stroke="#FEFEFE"
+                      stroke-width="1.5"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href=""
+                  class="w-[24px] h-[24px] flex justify-center items-center"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18 3H15C12.2386 3 10 5.23858 10 8V10H6V14H10V21H14V14H18V10H14V8C14 7.44772 14.4477 7 15 7H18V3Z"
+                      stroke="#FEFEFE"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href=""
+                  class="w-[24px] h-[24px] flex justify-center items-center"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      x="2"
+                      y="3"
+                      width="20"
+                      height="18"
+                      rx="4"
+                      stroke="#FEFEFE"
+                      stroke-width="1.5"
+                    />
+                    <path
+                      d="M10.4472 8.72361L15.2111 11.1056C15.9482 11.4741 15.9482 12.5259 15.2111 12.8944L10.4472 15.2764C9.78231 15.6088 9 15.1253 9 14.382V9.61803C9 8.87465 9.78231 8.39116 10.4472 8.72361Z"
+                      stroke="#FEFEFE"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <!-- Footer Section top right box -->
+            <div
+              class="flex justify-between w-full max-w-[544px] gap-[32px] max-sm-573:flex-wrap"
+            >
+              <div
+                class="w-full max-w-[160px] max-sm-573:border-b-[1px] max-sm-573:border-[#6C7275] max-sm-430:max-w-[100%]"
+              >
+                <h3
+                  class="font-Poppins font-medium text-[16px] leading-[24px] text-color-white-80"
+                >
+                  Page
+                </h3>
+                <a
+                  class="mt-[40px] font-Inter font-normal text-[14px] leading-[22px] mb-[24px] block text-[#fff]"
+                  href=""
+                  >Home</a
+                >
+                <a
+                  class="font-Inter font-normal text-[14px] leading-[22px] mb-[24px] block text-[#fff]"
+                  href=""
+                  >Shop</a
+                >
+                <a
+                  class="font-Inter font-normal text-[14px] leading-[22px] mb-[24px] block text-[#fff]"
+                  href=""
+                  >Product</a
+                >
+                <a
+                  class="font-Inter font-normal text-[14px] leading-[22px] mb-[24px] block text-[#fff]"
+                  href=""
+                  >Articles</a
+                >
+                <a
+                  class="font-Inter font-normal text-[14px] leading-[22px] mb-[24px] block text-[#fff]"
+                  href=""
+                  >Contact Us</a
+                >
+              </div>
+              <div
+                class="w-full max-w-[160px] max-sm-573:border-b-[1px] max-sm-573:border-[#6C7275] max-sm-430:max-w-[100%]"
+              >
+                <h3
+                  class="font-Poppins font-medium text-[16px] leading-[24px] text-color-white-80"
+                >
+                  Info
+                </h3>
+                <a
+                  class="mt-[40px] font-Inter font-normal text-[14px] leading-[22px] mb-[24px] block text-[#fff]"
+                  href=""
+                  >Shipping Policy</a
+                >
+                <a
+                  class="font-Inter font-normal text-[14px] leading-[22px] mb-[24px] block text-[#fff]"
+                  href=""
+                  >Return & Refund</a
+                >
+                <a
+                  class="font-Inter font-normal text-[14px] leading-[22px] mb-[24px] block text-[#fff]"
+                  href=""
+                  >Support</a
+                >
+                <a
+                  class="font-Inter font-normal text-[14px] leading-[22px] mb-[24px] block text-[#fff]"
+                  href=""
+                  >FAQs</a
+                >
+              </div>
+              <div class="w-full max-w-[160px] max-sm-430:max-w-[100%]">
+                <h3
+                  class="font-Poppins font-medium text-[16px] leading-[24px] text-color-white-80"
+                >
+                  Office
+                </h3>
+                <a
+                  class="mt-[40px] font-Inter font-normal text-[14px] leading-[22px] mb-[24px] block text-[#fff]"
+                  href=""
+                >
+                  43111 Hai Trieu street, District 1, HCMC Vietnam
+                </a>
+                <a
+                  class="font-Inter font-normal text-[14px] leading-[22px] mb-[24px] block text-[#fff]"
+                  href=""
+                  >84-756-3237</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Footer Section Bottom Box -->
+          <div
+            class="w-full mt-[64px] border-t-[1px] border-[#6C7275] flex justify-between items-center gap-[15px] pt-[32px] max-lg-1120:flex-col-reverse max-lg-1120:justify-center"
+          >
+            <div
+              class="w-full max-w-[519px] flex justify-between items-center gap-[16px] max-sm-573:flex-col-reverse max-sm-573:justify-center max-sm-573:text-center"
+            >
+              <p
+                class="font-Poppins font-normal text-[12px] leading-[20px] text-[#E8ECEF] border-r-[1px] border-[#6C7275] pr-[16px] max-sm-573:border-none"
+              >
+                Copyright © 2023 3legant. All rights reserved
+              </p>
+              <div class="flex gap-[16px]">
+                <a
+                  href=""
+                  class="font-Inter font-normal text-[12px] leading-[20px] text-[#6C7275] max-sm-573:text-[#fff]"
+                  >Privacy Policy</a
+                >
+                <a
+                  href=""
+                  class="font-Inter font-normal text-[12px] leading-[20px] text-[#6C7275] max-sm-573:text-[#fff]"
+                  >Terms & Conditions</a
+                >
+              </div>
+            </div>
+            <div
+              class="w-full max-w-[328px] flex justify-between items-center gap-[8px]"
+            >
+              <div class="w-[48px] h-[32px]">
+                <img src="./image/Payment Methods1.png" alt="" />
+              </div>
+              <div class="w-[48px] h-[32px]">
+                <img src="./image/Payment Methods2.png" alt="" />
+              </div>
+              <div class="w-[48px] h-[32px]">
+                <img src="./image/Payment Methods3.png" alt="" />
+              </div>
+              <div class="w-[48px] h-[32px]">
+                <img src="./image/Payment Methods4.png" alt="" />
+              </div>
+              <div class="w-[48px] h-[32px]">
+                <img src="./image/Payment Methods5.png" alt="" />
+              </div>
+              <div class="w-[48px] h-[32px]">
+                <img src="./image/Payment Methods6.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
 
 <!-- npx tailwindcss -i ./index.css -o ./dist/style.css --watch -->
+<!-- https://www.geeksforgeeks.org/how-to-add-image-in-text-background-using-html-and-css/ -->
+<!-- https://tailwindcss.com/docs/responsive-design#customizing-your-theme -->
